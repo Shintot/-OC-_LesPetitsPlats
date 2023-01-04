@@ -9,11 +9,6 @@ const resultasIngr = document.querySelector("#chercheIngr");
 
 
 
-//ustensils__results
-
-
-
-
 
 
 

@@ -9,9 +9,7 @@ fetch("recipes.json")
     console.log(resultas)
     
 // TRIE DE RECHERCHE 
-    //EVENT
     rechercheBar.addEventListener("input", filtre);
-
     function filtre(e) {
       //VIDE LA LISTE
       resulta.innerHTML = "";
@@ -25,46 +23,23 @@ fetch("recipes.json")
       );
 
       creaCarte(trie);
-      console.log(resultas);
     }
-
-    
-    
-
 
     // AFFICHE CARTES
     creaCarte(resultas);
 
     //affiche filtre appareil
     apprareilFiltreAppareil(resultas);
-
-    apprareilFiltreUstensiles(resultas);
-
     apprareilFiltreIngredient(resultas);
+    apprareilFiltreUstensiles(resultas);
+    //IngredientFiltre(resultas);
 
    
-    
-
-    const test = document.querySelectorAll(".casparcas");
-    
-    
-    
-
-     resultasIngr.addEventListener("input", function () {
-       //console.log(this.value);
-       const rechercheClavier = this.value;
-       const ingredientFiltre = test.filter(function(ingredient){
-        return ingredient.toLowerCase().includes(rechercheClavier);
-       })
-
-       apprareilFiltreIngredient(ingredientFiltre);
-     });
     
    
   })
 
     
-
   //FIN 
   .catch((err) => {
     console.log(err);

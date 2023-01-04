@@ -6,8 +6,6 @@ function creaCarte(cartes) {
     //DESTRUCTURE
     const { name, time, description, ingredients } = resuls;
 
-    
-
     //DIV CONTENANT + CSS
     const recetteList = document.createElement("div");
     recetteList.setAttribute("class", "recipe__card");
@@ -65,6 +63,9 @@ function creaCarte(cartes) {
     descriptions.innerText = description;
     aside.appendChild(descriptions);
 
+
+  // ************************** VERSION INNERHTML ***********************************
+
     /*recetteList.innerHTML = `<div class="recipe__card__placeholder"></div>
 					 		 <section class="recipe__card__section">
 					 			<header class="recipe__card__header">
@@ -95,36 +96,3 @@ function creaCarte(cartes) {
 	}*/
   }
 }
-
-
-
-/*function ingredientss(carte) {
-	
-	for (let ingre of carte) {
-		
-		const { ingredients } = ingre;
-		console.log(ingre);
-		for (let ion of ingredients) {
-			//console.log(ion);
-			const { ingredient, quantity, unit } = ion;
-			const ingrr = document.createElement("ul")
-			ingrr.innerHTML = `<p>${ingredient}</p>`;
-			test.appendChild(ingrr);
-		}
-    
-    
-	
-	
-  }
-}
-*/
-
-
-//<li class="recipe__card__list__item"><strong>${ingredients[0].ingredient} </strong>: ${ingredients[0].quantity}/ ${ingredients[0].unit} </li>
-
-
-//                              <li class="recipe__card__list__item"><strong>${ingredients[0].ingredient} </strong>: ${ingredients[0].quantity}/ ${ingredients[0].unit} </li>
-//					 			<li class="recipe__card__list__item"><strong>${resuls.ingredients[1].ingredient} </strong>: 25 cl </li>
-//					 			<li class="recipe__card__list__item"><strong>Oignon </strong>: 1 </li>
-//					 			<li class="recipe__card__list__item"><strong>Poivron rouge </strong>: 1 </li>
-//					 			<li class="recipe__card__list__item"><strong>Huile d'olives </strong></li>

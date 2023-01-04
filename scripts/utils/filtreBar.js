@@ -1,9 +1,7 @@
 
-//********************** OUVRE LES FILTRES AU CLIC *********************************
 
 
-
-// ------- INGREDIENTS
+//********************** INGREDIENTS *********************************
 pagefiltreIngredient.setAttribute("class", "ingredient__results__displayed");
 pagefiltreIngredient.style.display = "none";
 
@@ -42,26 +40,39 @@ pagefiltreIngredient.style.display = "none";
     btnup.style.display = "none";
   }
 
-  // APARITION DES INGREDIENTS 
+  // APARITION DES INGREDIENTS BOUCLE FOR 
   function apprareilFiltreIngredient(ing) {
-    for (let u of ing) {
+    // ------ VERSION BOUCLE FOR()
+   /* for (let u of ing) {
       const { ingredients } = u;
       for (let ingredientList of ingredients) {
         const { ingredient } = ingredientList;
-        //console.log(ingredient);        
-       const liIng = document.createElement("li");
-       liIng.setAttribute("class", "casparcas")
-       liIng.innerHTML = `${ingredient}`;
-       pagefiltreIngredient.appendChild(liIng);       
+        const liIng = document.createElement("li");
+        liIng.setAttribute("class", "casparcas");
+        liIng.innerHTML = `${ingredient}`;
+        pagefiltreIngredient.appendChild(liIng);
       }
-    }
+    }*/
+
+    // ------ VERSION FOREACH()
+    ing.forEach(element => {
+      const { ingredients } = element;
+      ingredients.forEach(element => {
+        const { ingredient } = element;
+        const liIng = document.createElement("li");
+        liIng.setAttribute("class", "casparcas");
+        liIng.innerHTML = `${ingredient}`;
+        pagefiltreIngredient.appendChild(liIng);
+
+        
+      });
+    });
   }
 
-    
+ 
 
 
-//  ------- APPAREILS
-  
+// ********************** APPAREILS *********************************
   //BTN UP CACHE 
   const boutonUp = document.querySelector("#boutonAppareilup");
   boutonUp.style.display = "none";
@@ -97,23 +108,31 @@ pagefiltreIngredient.style.display = "none";
   boutonUp.style.display = "none";
 }
 
-
 //  ------- ADD LA LISTE D'APPAREILS AU BOUTON 
   pagefiltreAppareil.setAttribute("class", "apparatus__results__undisplayed");
   function apprareilFiltreAppareil(filtre) {
-    for (let uls of filtre) {
-      
+    
+    // ------ VERSION BOUCLE FOR() 
+    /*for (let uls of filtre) {
       const { appliance } = uls;
-      //console.log(uls);
+      console.log(appliance);
       const li = document.createElement("li");
       li.innerHTML = `<p class="">${appliance}</p>`;
       pagefiltreAppareil.appendChild(li);
-    }
+    }*/
+
+    // ------ VERSION FOREACH()
+    filtre.forEach(element => {
+      const {appliance} = element
+      const li = document.createElement("li");
+      li.innerHTML = `<p class="">${appliance}</p>`;
+      pagefiltreAppareil.appendChild(li);
+    });
 }
 
 
 
-//  ------- USTENSILES
+// ********************** USTENSILS *********************************
   const up = document.querySelector("#boutonUstensils");
   up.style.display="none"
 
@@ -150,16 +169,30 @@ pagefiltreIngredient.style.display = "none";
 //  ------- ADD LA LISTE D'USTENSILES AU BOUTON 
   pagefiltreUstensiles.setAttribute("class", "apparatus__results__undisplayed");
   function apprareilFiltreUstensiles(ust) {
-   for (let materiel of ust) {
+
+    // ------ VERSION BOUCLE FOR()
+    /*for (let materiel of ust) {
       const { ustensils } = materiel;
-        for (let ustensil of ustensils) {
-           //console.log(ustensil);
-            const liUst = document.createElement("li");
-            liUst.setAttribute("class", "test");
-          liUst.innerHTML = `<p class="">${ustensil}</p>`;
-          pagefiltreUstensiles.appendChild(liUst);
+      for (let ustensil of ustensils) {
+        //console.log(ustensil);
+        const liUst = document.createElement("li");
+        liUst.setAttribute("class", "test");
+        liUst.innerHTML = `<p class="">${ustensil}</p>`;
+        pagefiltreUstensiles.appendChild(liUst);
       }
-    }
+    }*/
+
+    // ------ VERSION FOREACH()
+    ust.forEach((element) => {
+      const { ustensils } = element;
+      ustensils.forEach((element) => {
+        console.log(element)
+        const liUst = document.createElement("li");
+        liUst.setAttribute("class", "test");
+        liUst.innerHTML = `<p class="">${element}</p>`;
+        pagefiltreUstensiles.appendChild(liUst);
+      });
+    });
   }
 
 
