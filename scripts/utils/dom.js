@@ -5,6 +5,8 @@ const pagefiltreUstensiles = document.querySelector("#ustensils__results");
 const pagefiltreIngredient = document.querySelector("#ingredient__results");
 const chercheIngr = document.querySelector("#chercheIngr");
 const resultasIngr = document.querySelector("#chercheIngr");
+const resultasUst = document.querySelector("#rechercheUsteniles");
+const resultasApp = document.querySelector(".apparatus__input");
 
 
 

@@ -6,7 +6,7 @@ fetch("recipes.json")
   .then((data) => {
     //LE JSON
     const resultas = data.recipes;
-    console.log(resultas)
+    //console.log(resultas)
     
 // TRIE DE RECHERCHE 
     rechercheBar.addEventListener("input", filtre);
@@ -27,16 +27,12 @@ fetch("recipes.json")
 
     // AFFICHE CARTES
     creaCarte(resultas);
-
     //affiche filtre appareil
     apprareilFiltreAppareil(resultas);
     apprareilFiltreIngredient(resultas);
     apprareilFiltreUstensiles(resultas);
-    //IngredientFiltre(resultas);
 
-   
     
-   
   })
 
     

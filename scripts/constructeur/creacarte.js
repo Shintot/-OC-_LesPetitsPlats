@@ -48,10 +48,17 @@ function creaCarte(cartes) {
     ul.setAttribute("class", "recipe__card__list");
     aside.appendChild(ul);
 
+    /*[...new Set(ingredients)].forEach((element) => {
+      const { ingredient, quantity, unit } = element;
+      console.log(unit)
+      const li = document.createElement("li");
+      li.setAttribute("class", "recipe__card__list__item");
+      li.innerHTML = `<strong>${ingredient}</strong> ${quantity}  ${unit}`;
+      ul.appendChild(li);
+    });*/
+
     for (let ingre of ingredients) {
       const { ingredient, quantity, unit } = ingre;
-      
-        //console.log(unit);
       const li = document.createElement("li");
       li.setAttribute("class", "recipe__card__list__item");
       li.innerHTML = `<strong>${ingredient}</strong> ${quantity}  ${unit}`;
