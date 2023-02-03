@@ -177,7 +177,7 @@
           {
             "ingredient": "Crème fraîche",
             "quantity": 2,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           },
           {
             "ingredient": "Gruyère râpé",
@@ -187,14 +187,14 @@
           {
             "ingredient": "Moutarde de Dijon",
             "quantity": 1,
-            "unite": "cuillères à soupe"
+            "unite": "Cuillères à soupe"
           }
         ],
         "time": 45,
         "description": "Etaler la pâte feuilleté aux dimensions du moule, étaler la moutarde sur la pâte feuilleté, ajouter le thon. Découper les tomates en rondelles et les poser sur le poisson, ajouter un peu de crème fraiche sur toute la tarte et recouvrez de gruyère râpé. Cuire au four 30 minutes",
         "appliance": "Four",
         "ustensils": [
-          "moule à tarte",
+          "Moule à tarte",
           "râpe à fromage",
           "couteau"
         ]
@@ -492,12 +492,12 @@
           {
             "ingredient": "Vinaigre de cidre",
             "quantity": 1,
-            "unit": "cuillère à soupe"
+            "unit": "Cuillère à soupe"
           },
           {
             "ingredient": "Huile d'olives",
             "quantity": 2,
-            "unit": "cuillère à soupe"
+            "unit": "Cuillère à soupe"
           }
         ],
         "time": 40,
@@ -621,7 +621,7 @@
           {
             "ingredient": "Huile d'olives",
             "quantity": 2,
-            "unit": "cuillère à soupe"
+            "unit": "Cuillère à soupe"
           }
         ],
         "time": 45,
@@ -650,7 +650,7 @@
           {
             "ingredient": "Jus de citron",
             "quantity": 1,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           },
           {
             "ingredient": "Glaçons",
@@ -762,7 +762,7 @@
           {
             "ingredient": "Huile d'olives",
             "quantity": 1,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 30,
@@ -770,7 +770,7 @@
         "appliance": "Sauteuse",
         "ustensils": [
           "râpe à fromage",
-          "cuillère en bois"
+          "Cuillère en bois"
         ]
       },
       {
@@ -805,7 +805,7 @@
           {
             "ingredient": "Crème fraîche",
             "quantity": 1,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 30,
@@ -813,7 +813,7 @@
         "appliance": "Casserole",
         "ustensils": [
           "Cuillère en bois",
-          "louche",
+          "Louche",
           "couteau"
         ]
       },
@@ -895,7 +895,7 @@
         "description": "Etaler la pate dans un moule et la piquer.Parsemer de beurre. Faire chauffer les lardon dans une poêle. Battre les oeufs en ajoutant la crème fraîche et le lait. Finalement ajouter les lardons, salez poivrez à votre gout. Verser l'ensemble sur la pâte. Cuire environ 50 minutes.",
         "appliance": "Four",
         "ustensils": [
-          "moule à gateaux",
+          "Moule à gateaux",
           "rouleau à patisserie",
           "fouet"
         ]
@@ -931,7 +931,7 @@
           {
             "ingredient": "Mayonnaise",
             "quantity": 2,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 40,
@@ -1031,7 +1031,7 @@
           {
             "ingredient": "Crème fraîche",
             "quantity": 4,
-            "unit": "cuillère à soupe"
+            "unit": "Cuillère à soupe"
           },
           {
             "ingredient": "Vermicelles",
@@ -1120,7 +1120,7 @@
         "description": "Prendre les pois chiches, les mettre dans le mixer avec de l'huile d'olive, ajouter le jus des 2 citrons et du paprika selon le gout.",
         "appliance": "Mixer",
         "ustensils": [
-          "cuillère en bois",
+          "Cuillère en bois",
           "presse citron"
         ]
       },
@@ -1230,7 +1230,7 @@
         "appliance": "Four",
         "ustensils": [
           "râpe à fromage",
-          "cuillère à Soupe",
+          "Cuillère à Soupe",
           "couteau"
         ]
       },
@@ -1256,12 +1256,12 @@
           {
             "ingredient": "Fromage blanc",
             "quantity": 4,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           },
           {
             "ingredient": "Jus de citron",
             "quantity": 1,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 5,
@@ -1269,7 +1269,7 @@
         "appliance": "Four",
         "ustensils": [
           "couteau",
-          "cuillère en bois"
+          "Cuillère en bois"
         ]
       },
       {
@@ -1325,12 +1325,12 @@
           {
             "ingredient": "Crème fraîche",
             "quantity": 2,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           },
           {
             "ingredient": "Cumin",
             "quantity": 1,
-            "unit": "cuillères à café"
+            "unit": "Cuillères à café"
           },
           {
             "ingredient": "Noix de muscade",
@@ -1344,7 +1344,7 @@
         "ustensils": [
           "cocotte minute",
           "couteau",
-          "cuillère en bois"
+          "Cuillère en bois"
         ]
       },
       {
@@ -1378,7 +1378,7 @@
           {
             "ingredient": "Maïzena",
             "quantity": 1,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 35,
@@ -1518,12 +1518,12 @@
           {
             "ingredient": "Sucre en poudre",
             "quantity": 4,
-            "unit": "cuillères à café"
+            "unit": "Cuillères à café"
           },
           {
             "ingredient": "Bicarbonate",
             "quantity": 1,
-            "unit": "cuillères à café"
+            "unit": "Cuillères à café"
           }
         ],
         "time": 10,
@@ -1628,7 +1628,7 @@
         "appliance": "Four",
         "ustensils": [
           "rouleau à patisserie",
-          "moule à tarte",
+          "Moule à tarte",
           "presse citron"
         ]
       },
@@ -1743,7 +1743,7 @@
         "appliance": "Four",
         "ustensils": [
           "fouet",
-          "moule",
+          "Moule",
           "verres"
         ]
       },
@@ -1846,7 +1846,7 @@
           {
             "ingredient": "Miel",
             "quantity": 2,
-            "unit": "cuillères à soupe"
+            "unit": "Cuillères à soupe"
           }
         ],
         "time": 0,

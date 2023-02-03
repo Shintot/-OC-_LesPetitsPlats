@@ -4,7 +4,7 @@ function creaCarte(cartes) {
 
   for (let resuls of cartes) {
     //DESTRUCTURE
-    const { name, time, description, ingredients } = resuls;
+    const { name, time, description, ingredients, appliance } = resuls;
 
     //DIV CONTENANT + CSS
     const recetteList = document.createElement("div");
@@ -59,9 +59,10 @@ function creaCarte(cartes) {
 
     for (let ingre of ingredients) {
       const { ingredient, quantity, unit } = ingre;
+      
       const li = document.createElement("li");
       li.setAttribute("class", "recipe__card__list__item");
-      li.innerHTML = `<strong>${ingredient}</strong> ${quantity}  ${unit}`;
+      li.innerHTML = `<strong>${ingredient}</strong> ${quantity?quantity:''}  ${unit?unit:''}`;
       ul.appendChild(li);
     }
 

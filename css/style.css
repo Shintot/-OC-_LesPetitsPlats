@@ -735,4 +735,54 @@ body {
   cursor: pointer;
 }
 
+.casparcasappareil {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.casparcasustensils {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.tagust {
+  background-color: #ED6454;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.tagingr{
+  display: block;
+   background-color: #3282F7;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.tagapp {
+  background-color: #68D9A4;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.tagtext {
+  color: white;
+}
+
+.flex{
+  display: flex;
+}
+
+.croix {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
