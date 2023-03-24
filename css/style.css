@@ -747,21 +747,46 @@ body {
   cursor: pointer;
 }
 
-.tagust {
-display: block;
-}
-
-.tagingr{
-  display: block;
- 
-}
-
 .tagapp {
-display: block;
+
+  background-color: #34dba3;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
 }
+
+ 
+
+.tagust {
+
+  background-color: #e0533a;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+}
+
+ 
+
+.tagingr {
+
+  background-color: #5552e0;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+ 
 
 .tagtext {
-  color: white;
+  margin-right: 5px;
 }
 
 .flexust{
