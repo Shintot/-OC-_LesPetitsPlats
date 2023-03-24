@@ -72,6 +72,7 @@
   [...new Set(tableauxIngr)].forEach((element) => {
     tableauxIngrTrie.push(element);
     const liIng = document.createElement("a");
+    
     liIng.setAttribute("class", "casparcas");
     liIng.innerHTML = `${element}`;
     pagefiltreIngredient.appendChild(liIng);
@@ -88,7 +89,7 @@
   let regex = new RegExp(rechercheString);
 
   const trie = tableauxIngrTrie.filter((el) => {
-    return regex.test(el.toLowerCase());
+    return regex.test(el.replace(/\s/g, "").toLowerCase());
   });
   //console.log("filtered", trie);
   apprareilFiltreIngredient(trie);
@@ -180,8 +181,8 @@
     pagefiltreAppareil.innerHTML = "";
     const rechercheString = e.target.value.toLowerCase().replace(/\s/g, "");
 
-    const trie = tableauxAppTrie.filter(
-      (el) => el.appliance.toLowerCase().includes(rechercheString) //|| console.log(el)
+    const trie = tableauxAppTrie.filter((el) =>
+      el.appliance.toLowerCase().replace(/\s/g, "").includes(rechercheString)
     );
     apprareilFiltreAppareil(trie);
 
@@ -280,9 +281,9 @@
     let regex = new RegExp(rechercheString);
     const trie = tableauxTrie.filter((el) => {
       console.log(el);
-      return regex.test(el.toLowerCase());
+      return regex.test(el.replace(/\s/g, "").toLowerCase());
     });
-    console.log("filtered", trie);
+    //console.log("filtered", trie);
     apprareilFiltreUstensiles(trie);
     // AFFICHE TAG AU CLIC
     Tags();

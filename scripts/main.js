@@ -6,6 +6,7 @@ fetch("recipes.json")
     
     //LE JSON
     const resultas = data.recipes;
+   
     
     // TRIE DE RECHERCHE 
     rechercheBar.addEventListener("input", filtre);
@@ -16,13 +17,16 @@ fetch("recipes.json")
        
       const trie = resultas.filter(
         (el) =>
-          el.name.toLowerCase().includes(rechercheString) ||
+          el.name.toLowerCase().replace(/\s/g, "").includes(rechercheString) ||
           el.appliance.toLowerCase().includes(rechercheString) ||
           el.ingredients.some((ingredient) =>
-            ingredient.ingredient.toLowerCase().includes(rechercheString)
+            ingredient.ingredient
+              .toLowerCase()
+              .replace(/\s/g, "")
+              .includes(rechercheString)
           ) ||
           el.ustensils.some((ustensil) =>
-            ustensil.toLowerCase().includes(rechercheString)
+            ustensil.toLowerCase().replace(/\s/g, "").includes(rechercheString)
           )
       );
       creaCarte(trie);
@@ -37,11 +41,9 @@ fetch("recipes.json")
     apprareilFiltreUstensiles(resultas);
     
     // TAGS DE RECHERCHE
-    Tags();
+    Tags(resultas);
 
-    const test = document.querySelectorAll("#croix");
-    console.log(test.firstElementChild);
-
+    
   })
  
     //FIN

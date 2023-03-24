@@ -733,6 +733,8 @@ body {
 .casparcas {
   margin: 1rem;
   cursor: pointer;
+  text-decoration:none;
+  
 }
 
 .casparcasappareil {
@@ -746,6 +748,24 @@ body {
 }
 
 .tagust {
+display: block;
+}
+
+.tagingr{
+  display: block;
+ 
+}
+
+.tagapp {
+display: block;
+}
+
+.tagtext {
+  color: white;
+}
+
+.flexust{
+  display: flex;
   background-color: #ED6454;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -753,29 +773,21 @@ body {
   border-radius: 0.5rem;
 }
 
-.tagingr{
-  display: block;
-   background-color: #3282F7;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-top: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-.tagapp {
-  background-color: #68D9A4;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-top: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-.tagtext {
-  color: white;
-}
-
-.flex{
+.flexapp{
   display: flex;
+   background-color: #68D9A4;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;}
+
+.flexingr{
+  display: flex;
+  background-color: #3282F7;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .croix {
