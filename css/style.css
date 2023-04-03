@@ -748,39 +748,38 @@ body {
 }
 
 .tagapp {
-
+  display: flex;
   background-color: #34dba3;
   color: white;
   padding: 5px;
   border-radius: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
-
+margin-top: 5px;
 }
 
  
 
 .tagust {
-
+  display: flex;
   background-color: #e0533a;
   color: white;
   padding: 5px;
   border-radius: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
-
+ margin-top: 5px;
 }
 
  
 
 .tagingr {
-
-  background-color: #5552e0;
+display: flex;
+  background-color: #3282F7;
   color: white;
-  padding: 5px;
+  padding: 4px;
   border-radius: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  
 }
 
  
