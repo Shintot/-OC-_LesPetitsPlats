@@ -821,4 +821,20 @@ display: flex;
   cursor: pointer;
 }
 
+.flextagingr {
+  display: flex;
+  padding: 0.5rem;
+}
+
+
+.flextagapp {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.flextagust {
+  display: flex;
+  padding: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

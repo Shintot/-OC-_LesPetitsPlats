@@ -1,6 +1,16 @@
 //CREATION DE CARTES
 
 function creaCarte(cartes) {
+  // Supprimez le contenu précédent du conteneur de résultats
+
+  resulta.innerHTML = "";
+  // Si le tableau de cartes est vide, affichez le message "aucun résultat trouvé"
+  if (cartes.length === 0) {
+    const noResultsMessage = document.createElement("p");
+    noResultsMessage.innerText = "Aucun résultat trouvé";
+    resulta.appendChild(noResultsMessage);
+    return;
+  }
 
   for (let resuls of cartes) {
     //DESTRUCTURE
@@ -59,10 +69,12 @@ function creaCarte(cartes) {
 
     for (let ingre of ingredients) {
       const { ingredient, quantity, unit } = ingre;
-      
+
       const li = document.createElement("li");
       li.setAttribute("class", "recipe__card__list__item");
-      li.innerHTML = `<strong>${ingredient}</strong> ${quantity?quantity:''}  ${unit?unit:''}`;
+      li.innerHTML = `<strong>${ingredient}</strong> ${
+        quantity ? quantity : ""
+      }  ${unit ? unit : ""}`;
       ul.appendChild(li);
     }
 
@@ -71,8 +83,7 @@ function creaCarte(cartes) {
     descriptions.innerText = description;
     aside.appendChild(descriptions);
 
-
-  // ************************** VERSION INNERHTML ***********************************
+    // ************************** VERSION INNERHTML ***********************************
 
     /*recetteList.innerHTML = `<div class="recipe__card__placeholder"></div>
 					 		 <section class="recipe__card__section">
